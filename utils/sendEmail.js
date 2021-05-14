@@ -29,7 +29,7 @@ const sendEmail = async ({ name, email }) => {
                   "guest": "Yash Chandel",
                   "partysize": "4",
                   "english": true,
-                  "date": "April 1st, 2021"
+                  "date": "May 14th, 2021"
                 },
           content: [
             {
