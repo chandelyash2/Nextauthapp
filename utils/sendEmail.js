@@ -1,14 +1,13 @@
 import fetch from 'node-fetch'
+imp
 
-const SENDGRID_API = 'https://api.sendgrid.com/v3/mail/send'
-const SENDGRID_API_KEY = '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'
 
 const sendEmail = async ({ name, email }) => {
-    await fetch(SENDGRID_API, {
+    await fetch(process.env.SENDGRID_API, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${SENDGRID_API_KEY}`
+          Authorization: `Bearer ${process.env.SENDGRID_API_Key}`
         },
         body: JSON.stringify({
           personalizations: [

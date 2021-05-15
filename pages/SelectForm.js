@@ -21,7 +21,7 @@ function Select() {
       [e.target.name]: e.target.value,
     });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     registerUser();
     fetch('/api/users/send-email', {
